@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal|center_vertical|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center_vertical|center"
+            android:id="@+id/livecontentfragment"
+            android:name="se.slashat.slashapp.fragments.live.CountdownFragment"
+            tools:layout="@layout/countdown_fragment"/>
+
+</RelativeLayout>

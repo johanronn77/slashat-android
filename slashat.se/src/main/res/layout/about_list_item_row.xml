@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_margin="10dp"
+              android:background="@drawable/card_bg"
+              android:orientation="horizontal"
+              android:padding="10dp" >
+
+    <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp">
+    <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:padding="1dp"
+            android:src="@drawable/jezper"
+            android:background="#cfcac5"
+
+        />
+        <ProgressBar
+                android:id="@+id/imageviewprogress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress"
+                android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="4dp"
+            android:text="Jezper Söderlund"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingMultiplier="1"
+            android:gravity="top" />
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="0dp"
+                android:gravity="top"
+                android:text="Programledare"
+                android:textColor="#888888"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingMultiplier="1" />
+    </LinearLayout>
+</LinearLayout>

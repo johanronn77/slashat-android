@@ -9,8 +9,11 @@
 *.class
 
 # generated files
+.gradle
 bin/
 gen/
+slashat.se/build/
+build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -18,3 +21,14 @@ local.properties
 # Eclipse project files
 .classpath
 .project
+
+# Android studio project  files
+.idea
+
+# ignore comitting changes to Constants which contains hidden keys.
+slashat.se/src/main/java/se/slashat/slashapp/Constants.java
+
+*.DS_Store
+
+#AS ignore
+*.iml

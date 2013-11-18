@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'http://repo1.maven.org/maven2' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.1'
+    }
+}
+apply plugin: 'android'
+repositories {
+	mavenCentral()
+	mavenLocal()
+    maven { url 'https://raw.github.com/embarkmobile/zxing-android-minimal/mvn-repo/maven-repository/' }
+}
+dependencies{
+    compile 'com.google.zxing:core:2.2'
+    compile 'com.embarkmobile:zxing-android-minimal:1.1.4@aar'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'joda-time:joda-time:2.2'
+    compile 'com.android.support:support-v4:13.0.+'
+    compile "com.android.support:appcompat-v7:18.0.+"
+
+    /*compile "com.android.support:mediarouter-v7:18.0.0"
+    compile files('libs/GoogleCastSdkAndroid-1.0.0.jar')*/
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "18.0.1"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 18
+    }
+}

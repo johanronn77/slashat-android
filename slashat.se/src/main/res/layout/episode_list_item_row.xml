@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/card_bg"
+              android:orientation="horizontal"
+              android:padding="5dp"
+              tools:ignore="UseCompoundDrawables,HardcodedText,ContentDescription" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/episodeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:text="#219"
+            android:textColor="#888888"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:lineSpacingMultiplier="1.2" />
+
+        <ImageView
+            android:id="@+id/playbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleX="0.90"
+            android:scaleY="0.90"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_media_play_list"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginTop="0dp"
+            android:padding="0dp"
+            />
+    </LinearLayout>
+
+
+
+    <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+        android:background="#dddddd"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="4dp" />
+
+    <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+        <TextView
+                android:id="@+id/episodeTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:text="Alla lyssnar på slashat blah blah blah"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingMultiplier="1"/>
+        <TextView
+            android:id="@+id/dateAndLength"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:text="22 jan 2013 - 1:07:45"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-condensed"
+            android:lineSpacingMultiplier="1" />
+
+        <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Detta är en massa go text för att illustrera hur johan  det ser ut med en massa olika descs ... blalalaal alal lsnasdd akdajk dasdsa dkjasdjsad sajdajsdjas dasd jdsajdasjdsa"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:lineSpacingMultiplier="1.15" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

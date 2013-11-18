@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Slashat.se</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">LIVE</string>
+    <string name="title_section2">AVSNITT</string>
+    <string name="title_section3">OM SLASHAT.SE</string>
+    <string name="title_activity_live_fullscreen">Slashat.se - Live</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="now_live">NU LIVE!</string>
+
+</resources>
